@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <title>Jokenpô</title>
+</head>
+
+    <div class="form">
+        <h2>Formulário</h2>
+        <br>
+        <form>
+        <div class="user-box">
+            <div class="input-group">
+                <input required="" type="text" name="text" autocomplete="off" class="input">
+                <label class="user-label">Nome:</label>
+              </div>
+        </div>
+        <button> Salvar
+        </button>
+        </form>
+    </div>
+
+    <div class="modal">
+        <p class="message">Jokenpô!</p>
+            
+        <p class="message" id="resultado"></p>
+
+        <div class="options">
+            <button type="button" class="btn" id="btn-pedra" onclick="Game()" value="0" placeholder="Pedra">PEDRA</button>
+            <button type="button" class="btn" id="btn-papel" onclick="Game()" value="1">PAPEL</button>
+            <button type="button" class="btn" id="btn-tessoura" onclick="Game()" value="2">TESOURA</button>
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="fl-table">
+            <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>RA</th>
+            </tr>
+            </thead>
+                <tbody>
+                    <tr>
+                        <td>Leonardo</td>
+                        <td>Bruni</td>
+                        <td>6322030</td>
+                    </tr>
+                <tbody>
+        </table>
+    </div>
+    
+    <div id="resultado"></div>
+
+    <script src="../lib/game.js"></script>
+</body>
+</html>
